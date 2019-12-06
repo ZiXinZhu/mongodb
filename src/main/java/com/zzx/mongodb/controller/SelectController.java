@@ -32,7 +32,24 @@ public class SelectController {
         return selectFromMongoDB.selectOne();
     }
 
+    /**
+     * 按照时间从小到大【排序】返回
+     * @return
+     */
+    @GetMapping("/select/sort")
+    public List<UserPO> selectSort() {
+        return selectFromMongoDB.selectSort();
+    }
 
+
+    /**
+     * 按照时间从小到大排序【分页】返回
+     * @return
+     */
+    @GetMapping("/select/page")
+    public List<UserPO> selectPage() {
+        return selectFromMongoDB.selectPage();
+    }
 
 
 }

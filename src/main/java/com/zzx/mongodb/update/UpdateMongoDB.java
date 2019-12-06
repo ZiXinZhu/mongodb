@@ -9,6 +9,9 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 @Service
 public class UpdateMongoDB {
@@ -26,7 +29,7 @@ public class UpdateMongoDB {
 
     public long updateMulti(){
         Query query= Query.query(Criteria.where("roles.roleName").is(("程序员")));
-        Update update=Update.update("password","654321");
+        Update update=Update.update("password","654321").set("time", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
        return mongoTemplate.updateMulti(query,update, UserPO.class,collectionName).getModifiedCount();
     }
 
