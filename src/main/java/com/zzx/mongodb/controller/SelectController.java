@@ -1,7 +1,7 @@
 package com.zzx.mongodb.controller;
 
 import com.zzx.mongodb.PO.UserPO;
-import com.zzx.mongodb.select.SelectFromMongoDB;
+import com.zzx.mongodb.service.select.SelectFromMongoDB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

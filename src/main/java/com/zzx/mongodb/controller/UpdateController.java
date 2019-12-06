@@ -2,7 +2,7 @@ package com.zzx.mongodb.controller;
 
 
 import com.zzx.mongodb.PO.UserPO;
-import com.zzx.mongodb.update.UpdateMongoDB;
+import com.zzx.mongodb.service.update.UpdateMongoDB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +14,7 @@ public class UpdateController {
     UpdateMongoDB updateMongoDB;
 
     /**
-     * 修改第一条符合条件的文档
+     * 修改【第一条】符合条件的文档
      * @return
      */
     @GetMapping("/update")
@@ -23,7 +23,7 @@ public class UpdateController {
     }
 
     /**
-     * 修改符合内嵌数据条件的文档批量修改
+     * 修改符合内嵌数据条件的文档【批量修改】
      * @return
      */
     @GetMapping("/update/multi")
@@ -33,7 +33,7 @@ public class UpdateController {
 
 
     /**
-     * 修改第一条符合条件的文档并返回修改前的文档（原子操作）
+     * 修改第一条符合条件的文档并返回修改前的文档【原子操作】
      * @return
      */
     @GetMapping("/update/modify")

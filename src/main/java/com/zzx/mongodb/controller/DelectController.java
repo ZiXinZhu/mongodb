@@ -1,6 +1,6 @@
 package com.zzx.mongodb.controller;
 
-import com.zzx.mongodb.delect.DeleteFromMongodb;
+import com.zzx.mongodb.service.delect.DeleteFromMongodb;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +12,7 @@ public class DelectController {
     private DeleteFromMongodb deleteFromMongodb;
 
     /**
-     * 删除符合条件的所有数据
+     * 删除符合条件的【所有】数据
      * @return
      */
     @GetMapping("/delect")
@@ -21,7 +21,7 @@ public class DelectController {
     }
 
     /**
-     * 通过内嵌数据删除符合条件的所有数据
+     * 通过【内嵌数据】删除符合条件的所有数据
      * @return
      */
     @GetMapping("/delect/content")

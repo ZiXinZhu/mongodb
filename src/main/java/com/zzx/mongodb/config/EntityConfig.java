@@ -14,8 +14,8 @@ public class EntityConfig {
     private RolePO rolePO_one=new RolePO();
     private UserPO userPO=new UserPO();
     private UserPO userPO_one=new UserPO();
-    List<RolePO> list=new ArrayList<>();
-    List<RolePO> list_one=new ArrayList<>();
+    private List<RolePO> list=new ArrayList<>();
+    private List<RolePO> list_one=new ArrayList<>();
     @PostConstruct
     public void setData(){
         rolePO.setRoleID("1");
