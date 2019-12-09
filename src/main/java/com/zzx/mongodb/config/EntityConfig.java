@@ -8,9 +8,6 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * created by zzx
- */
 @Service
 public class EntityConfig {
     private RolePO rolePO=new RolePO();
