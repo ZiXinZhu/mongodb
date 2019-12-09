@@ -16,8 +16,8 @@ public class DelectController {
      * @return
      */
     @GetMapping("/delect")
-    public long delect() {
-        return deleteFromMongodb.delect();
+    public long delete() {
+        return deleteFromMongodb.delete();
     }
 
     /**
@@ -25,7 +25,7 @@ public class DelectController {
      * @return
      */
     @GetMapping("/delect/content")
-    public long delectContent() {
-        return deleteFromMongodb.delectcontent();
+    public long deleteContent() {
+        return deleteFromMongodb.deleteContent();
     }
 }

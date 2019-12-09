@@ -18,7 +18,7 @@ public class DeleteFromMongodb {
      * 删除符合条件的所有数据
      * @return
      */
-    public long delect() {
+    public long delete() {
         Query query = new Query(Criteria.where("username").is("qq"));
         DeleteResult result = mongoTemplate.remove(query, UserPO.class);
         long count = result.getDeletedCount();
@@ -30,7 +30,7 @@ public class DeleteFromMongodb {
      * 通过内嵌数据删除符合条件的所有数据
      * @return
      */
-    public long delectcontent() {
+    public long deleteContent() {
         Query query = new Query(Criteria.where("roles.roleName").is("老师"));
         DeleteResult result = mongoTemplate.remove(query, UserPO.class);
         long count = result.getDeletedCount();
