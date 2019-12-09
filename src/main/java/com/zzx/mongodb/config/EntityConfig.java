@@ -3,7 +3,6 @@ package com.zzx.mongodb.config;
 import com.zzx.mongodb.PO.RolePO;
 import com.zzx.mongodb.PO.UserPO;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
