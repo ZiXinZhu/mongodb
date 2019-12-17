@@ -14,9 +14,7 @@
     <!-- 控制台输出格式 -->
     <property name="console_log_pattern" value="%d{yyyy-MM-dd HH:mm:ss}  %highlight(%-5level) -- [  %thread ]  %cyan(%logger{50} %line ) : %msg %n"/>
     <!-- 文件输出格式 -->
-    <property name="file_log_pattern" value="%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
-    <!-- <property name="file_log_pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS}  %highlight(%-5level) &#45;&#45; [  %thread ]  %cyan(%logger{50} %line ) : %msg %n"/>-->
-
+    <property name="file_log_pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
 
 
     <!-- 输出到文件 -->
