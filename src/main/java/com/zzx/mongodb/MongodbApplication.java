@@ -6,7 +6,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
 
 
-@EnableAspectJAutoProxy
+//@EnableAspectJAutoProxy
 @SpringBootApplication
 public class MongodbApplication {
 

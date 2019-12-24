@@ -5,6 +5,8 @@ import com.zzx.mongodb.PO.RolePO;
 import com.zzx.mongodb.PO.UserPO;
 import com.zzx.mongodb.service.insert.InsertInToMongoDB;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,9 +15,9 @@ import sun.rmi.runtime.Log;
 import java.util.Collection;
 
 @RestController
-@Slf4j
-public class InsertController {
 
+public class InsertController {
+    private static Logger LOGINFO = LoggerFactory.getLogger("LOGINFO");
     @Autowired
     private InsertInToMongoDB insertInToMongoDB;
 
@@ -25,7 +27,7 @@ public class InsertController {
      */
     @GetMapping("/insert")
     public RolePO insert(){
-        log.info("====================================数据插入成功！================================================");
+        LOGINFO.info("====================================数据插入成功！================================================");
        return insertInToMongoDB.insert();
     }
 
